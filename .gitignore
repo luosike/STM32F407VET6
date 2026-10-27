@@ -1,0 +1,15 @@
+# Keil 编译输出文件
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.bin
+*.lst
+*.map
+
+# 编译输出文件夹
+Objects/
+Listings/
+Output/
+DebugConfig/
