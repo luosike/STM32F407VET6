@@ -1,4 +1,6 @@
-# Keil 编译输出文件
+# ==========================================
+# 1. STM32 (Keil MDK) 忽略规则
+# ==========================================
 *.o
 *.d
 *.crf
@@ -7,9 +9,40 @@
 *.bin
 *.lst
 *.map
+*.htm
+*.dep
 
-# 编译输出文件夹
+# Keil 编译输出文件夹
 Objects/
 Listings/
-Output/
 DebugConfig/
+RTE/
+
+# ==========================================
+# 2. Qt 忽略规则
+# ==========================================
+# Qt 编译输出文件夹 (通常叫 build-xxx)
+build-*/
+build-*
+debug/
+release/
+
+# Qt 可执行文件和动态库
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Qt 自动生成的中间文件
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.obj
+
+# CMake 构建产物 (如果是 CMake 工程)
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
